@@ -1,10 +1,19 @@
 package th.ac.kmtil.atm.model;
 //Chutima Wongsasao 61050825
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Customer {
+
+    @Id
     private   int id;
+
     private  String name;
     private String pin;
+
+    public  Customer(){ }
 
     public Customer(int id, String name, String pin) {
         this.id = id;
